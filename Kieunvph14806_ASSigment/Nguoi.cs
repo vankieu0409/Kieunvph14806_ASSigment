@@ -13,14 +13,14 @@ namespace Kieunvph14806_ASSigment
         private string tenDem;
         private string ten;
         private int namSinh;
-        private string gioiTinh;
+        private int gioiTinh;
 
         public Nguoi()
         {
 
         }
 
-        public Nguoi(string ho, string tenDem, string ten, int namSinh, string gioiTinh)
+        public Nguoi(string ho, string tenDem, string ten, int namSinh, int gioiTinh)
         {
             this.ho = ho;
             this.tenDem = tenDem;
@@ -53,17 +53,20 @@ namespace Kieunvph14806_ASSigment
             set => namSinh = value;
         }
 
-        public string GioiTinh
+        public int GioiTinh
         {
             get => gioiTinh;
             set => gioiTinh = value;
         }
 
+
         public virtual void InRaManHinh()
         {
-            Console.WriteLine("  {0}\n" +
+
+            Console.WriteLine((gioiTinh == 1) ? "Anh " : (gioiTinh == 0) ? "Chị" : "");
+            Console.WriteLine("{0}\n" +
                               " Năm Sinh: {1}\n" +
-                              " Giới Tính: {2}", ho + " " + tenDem + " " + ten, namSinh, gioiTinh);
+                              " Giới Tính: {2}", ho + " " + tenDem + " " + ten, namSinh, gioiTinh==1?"Nam":gioiTinh==0?"Nữ":"");
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net.Mime;
 using System.Text;
 using System.Threading.Tasks;
+
 using Kieunvph14806_ASSigment;
 
 namespace Kieunvph14806_ASSigment
@@ -33,7 +34,7 @@ namespace Kieunvph14806_ASSigment
             this.ghiChu = ghiChu;
         }
 
-        public DanhBa(string ho, string tenDem, string ten, int namSinh, string gioiTinh, string sdt1, string ssdt2, string email, string ghiChu) : base(ho, tenDem, ten, namSinh, gioiTinh)
+        public DanhBa(string ho, string tenDem, string ten, int namSinh, int gioiTinh, string sdt1, string ssdt2, string email, string ghiChu) : base(ho, tenDem, ten, namSinh, gioiTinh)
         {
             this.sdt1 = sdt1;
             this.ssdt2 = ssdt2;
@@ -67,12 +68,14 @@ namespace Kieunvph14806_ASSigment
 
         public override void InRaManHinh()
         {
+            Console.Write((GioiTinh == 1) ? "Anh " : (GioiTinh == 0) ? "Chị" : "");
             Console.WriteLine("  {0}\n" +
                               " Năm Sinh: {1}\n" +
                               " Giới Tính: {2}\n" +
                               " Số điện thoại: {3} - {4}\n" +
                               " Email: {5}\n" +
-                              " Ghi Chú: {6}", Ho + " " + TenDem + " " + Ten, NamSinh, GioiTinh, Sdt1, Ssdt2, Email, GhiChu);
+                              " Ghi Chú: {6}", Ho + " " + TenDem + " " + Ten, NamSinh, GioiTinh == 1 ? "Nam" : GioiTinh == 0 ? "Nữ" : "", Sdt1, Ssdt2, Email, GhiChu);
+
         }
     }
 }

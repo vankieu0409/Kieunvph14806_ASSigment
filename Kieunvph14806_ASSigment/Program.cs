@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Kieunvph14806_ASSigment
 {/*
@@ -21,12 +22,66 @@ namespace Kieunvph14806_ASSigment
     Sử dụng Delegate + 1 Điểm
     Check lỗi nhập vào người dùng hoặc Generic + 1 điểm
     */
+    
 
     class Program
     {
+        public static Service pt = new Service();
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.InputEncoding = Encoding.Unicode;
+            Console.OutputEncoding = Encoding.Unicode;
+
+            DelegateCallBack delegateCallback = new DelegateCallBack(DelegateMain);
+
+            do
+            {
+                CallBack(delegateCallback);
+
+            } while (true);
+
+        }
+
+        public delegate void DelegateCallBack(string lenh); // khai báo delegate
+
+
+        public static void DelegateMain(string lenh)
+        {
+
+            switch (lenh)
+            {
+                case "1":
+                    pt.QuanLyDnhBa(); Console.WriteLine(""); ; break;
+                case "2":
+                    pt.LocDanhSach(); Console.WriteLine(""); break;
+                case "3":
+                     Console.WriteLine(""); break;
+                case "4":
+                     Console.WriteLine(""); break;
+                case "5": break;
+                case "0":
+                    Environment.Exit(0); break;
+                default: Console.WriteLine(" CT đang phát triển"); break;
+            }
+            Console.WriteLine("");
+
+
+        }
+
+        public static void CallBack(DelegateCallBack delegateCallback)
+        {
+            Console.Write("----------- Danh sách ct ----------\n" +
+                                        " 1 Quản lý\n" +
+                                        " 2. LỌc \n" +
+                                        " 3. \n" +
+                                        " 4. \n" +
+                                        " 5. \n" +
+                                        " 0. THoát CT" +
+                                        " MỜi bạn chọ CT: ");
+
+            var lenh = Console.ReadLine();
+            delegateCallback(lenh);// gọi qua delegate
+
         }
     }
 }

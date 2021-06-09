@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Kieunvph14806_ASSigment
 {
-    public class Service
+    partial class Service
     {
 
         private List<DanhBa> _lstDanhBas;
@@ -15,35 +15,35 @@ namespace Kieunvph14806_ASSigment
         public Service()
         {
             _lstDanhBas = new List<DanhBa>();
-            DanhBa nguoi1 = new DanhBa("Nguyễn", "Văn", "Kiều", 1998, "Nam", "0382802345", "0857326448",
+            DanhBa nguoi1 = new DanhBa("Nguyễn", "Văn", "Kiều", 1998, 1, "0382802345", "0857326448",
                 " vankieu0409@gmail.com", "Hiền Huynh");
-            DanhBa nguoi2 = new DanhBa("Lê", "Thị", "Phương", 1998, "Nữ", "0389062345", "08573209006",
+            DanhBa nguoi2 = new DanhBa("Lê", "Thị", "Phương", 1998, 0, "0389062345", "08573209006",
                 " hiplee0906@gmail.com", "Honey");
-            DanhBa nguoi3 = new DanhBa("Nguyễn", "Văn", "Phương", 2001, "Nam", "0382803456", "0857326848",
+            DanhBa nguoi3 = new DanhBa("Nguyễn", "Văn", "Phương", 2001, 1, "0382803456", "0857326848",
                 " phuongCsharp@gmail.com", "Tiểu đệ C#");
-            DanhBa nguoi4 = new DanhBa("Hoàng", "Thị", "Hải", 2002, "Nữ", "0382804567", "08599885566",
+            DanhBa nguoi4 = new DanhBa("Hoàng", "Thị", "Hải", 2002, 0, "0382804567", "08599885566",
                 " haixu2002@gmail.com", "Tiểu Nguội C#");
-            DanhBa nguoi5 = new DanhBa("Kiều", "Thị", "Bình", 2001, "Nữ", "0388025345", "0957326448",
+            DanhBa nguoi5 = new DanhBa("Kiều", "Thị", "Bình", 2001, 0, "0388025345", "0957326448",
                 " binhbong@gmail.com", "Tiểu Nguội C#");
-            DanhBa nguoi6 = new DanhBa("Liêu", "Long", "Vũ ", 2002, "Nam", "0382801234", "0852346448",
+            DanhBa nguoi6 = new DanhBa("Liêu", "Long", "Vũ ", 2002, 1, "0382801234", "0852346448",
                 " vucute2k2@gmail.com", "");
-            DanhBa nguoi7 = new DanhBa("Lê", "Đình", "Nghĩa", 2002, "Nam", "0982802345", "0757326448",
+            DanhBa nguoi7 = new DanhBa("Lê", "Đình", "Nghĩa", 2002, 1, "0982802345", "0757326448",
                 " nghiaxoan2k2@gmail.com", "AE trong Ao Hồ");
-            DanhBa nguoi8 = new DanhBa("Hoàng", "Thái", "Sơn", 2002, "Nam", "0828023456", "0987326448",
+            DanhBa nguoi8 = new DanhBa("Hoàng", "Thái", "Sơn", 2002, 1, "0828023456", "0987326448",
                 " sonHQteam@gmail.com", "team HQ's Gamer ");
-            DanhBa nguoi9 = new DanhBa("Đặng", "", "Vũ", 2002, "Nam", "035698471", "0986574321",
+            DanhBa nguoi9 = new DanhBa("Đặng", "", "Vũ", 2002, 1, "035698471", "0986574321",
                 " vudang555@gmail.com", " hàng xóm của hàng xóm");
-            DanhBa nguoi10 = new DanhBa("Nguyễn", "Thị", "Hảo", 2003, "Nữ", "0958764321", "0369872541",
+            DanhBa nguoi10 = new DanhBa("Nguyễn", "Thị", "Hảo", 2003, 0, "0958764321", "0369872541",
                 " haohaok98@gmail.com", " Chủ Shop MỸ Phẩm Hàn Quốc");
-            DanhBa nguoi11 = new DanhBa("Thiều ", "Đức", "Lâm", 1998, "Nam", "0375423456", "0852346179",
+            DanhBa nguoi11 = new DanhBa("Thiều ", "Đức", "Lâm", 1998, 1, "0375423456", "0852346179",
                 " thieulam289@gmail.com", "Hiền ĐỆ");
-            DanhBa nguoi12 = new DanhBa("Đặng", "Mai", "Lan", 1998, "Nữ", "02113655998", "0986753421",
+            DanhBa nguoi12 = new DanhBa("Đặng", "Mai", "Lan", 1998, 0, "02113655998", "0986753421",
                 " lamdam98@gmail.com", " bà chủ tiệm thuốc  ");
-            DanhBa nguoi13 = new DanhBa("Trần", "Thị Bích", "Thủy", 1998, "Nữ", "0986513724", "0356241897",
+            DanhBa nguoi13 = new DanhBa("Trần", "Thị Bích", "Thủy", 1998, 0, "0986513724", "0356241897",
                 " thuybundau@gmail.com", " Chủ Quán Bún đậu AE-5k");
-            DanhBa nguoi14 = new DanhBa("Phùng", "Thị ", "Thúy", 1999, "Nữ", "0986513427", "0356249999",
+            DanhBa nguoi14 = new DanhBa("Phùng", "Thị ", "Thúy", 1999, 0, "0986513427", "0356249999",
                 "thuysell@gmail.com", " CEO- Đồ gia dụng An Phát");
-            DanhBa nguoi15 = new DanhBa(" Nguyễn", " Thị", "Thúy", 1999, "Nữ", "0879645213", "0956821473",
+            DanhBa nguoi15 = new DanhBa(" Nguyễn", " Thị", "Thúy", 1999, 0, "0879645213", "0956821473",
                 "thuyhiep@gmail.com", "Trưởng phòng Điều hành cty Du Lịch Âu Việt");
             _lstDanhBas.Add(nguoi1);
             _lstDanhBas.Add(nguoi2);
@@ -63,6 +63,8 @@ namespace Kieunvph14806_ASSigment
 
         }
 
+        #region QLDB
+
         public void themLienHe() //THÊM -  Liên Hệ vào TRONG DANH BẠ
         {
             Console.Write(" mời nhập Số người cần thêm: ");
@@ -79,8 +81,8 @@ namespace Kieunvph14806_ASSigment
                 nguoi.Ten = Console.ReadLine();
                 Console.Write(" mời bạn nhập Năm Sinh: ");
                 nguoi.NamSinh = Int32.Parse(Console.ReadLine());
-                Console.Write(" mời bạn nhập Giới Tính: ");
-                nguoi.GioiTinh = Console.ReadLine();
+                Console.Write(" mời bạn nhập Giới Tính: 1-Nam;  2-Nữ ");
+                nguoi.GioiTinh = Int16.Parse(Console.ReadLine());
                 Console.Write(" mời bạn nhập SĐT 1: ");
                 nguoi.Sdt1 = Console.ReadLine();
                 Console.Write(" mời bạn nhập SĐT 2: ");
@@ -153,8 +155,8 @@ namespace Kieunvph14806_ASSigment
                 {
                     case "1":
                         Console.Write(" Họ tên của " + _lstDanhBas[temp] + ": " + _lstDanhBas[temp].Ho + " " + _lstDanhBas[temp].TenDem + " " + _lstDanhBas[temp].Ten + "\n" +
-                                          " Bạn muốn sửa thành: \n " +
-                                          " họ: ");
+                                      " Bạn muốn sửa thành: \n " +
+                                      " họ: ");
                         _lstDanhBas[temp].Ho = Console.ReadLine();
                         Console.Write(" Tên Đệm: ");
                         _lstDanhBas[temp].TenDem = Console.ReadLine();
@@ -168,8 +170,8 @@ namespace Kieunvph14806_ASSigment
                         _lstDanhBas[temp].NamSinh = Int32.Parse(Console.ReadLine()); break;
                     case "3":
                         Console.Write(" Giới Tính cũ của " + _lstDanhBas[temp].Ten + ": " + _lstDanhBas[temp].GioiTinh + "\n" +
-                                      " Bạn muốn sửa thành: ");
-                        _lstDanhBas[temp].GioiTinh = Console.ReadLine(); break;
+                                      " Bạn muốn sửa thành:1-Nam;  0-Nữ ");
+                        _lstDanhBas[temp].GioiTinh = Int16.Parse(Console.ReadLine()); break;
                     case "4":
                         Console.Write(" SĐT1 cũ của " + _lstDanhBas[temp].Ten + ": " + _lstDanhBas[temp].Sdt1 + "\n" +
                                       " Bạn muốn sửa thành: ");
@@ -199,6 +201,11 @@ namespace Kieunvph14806_ASSigment
 
             } while (!(_input == "8"));// toán tử phủ định. dùng vong do- while
         }
+
+        public void XuatDB()
+        {
+            inra(_lstDanhBas);
+        }
         private void inra(List<DanhBa> _list)
         {
             Console.WriteLine("----------- Danh bạ của bạn ---------- " +
@@ -213,18 +220,18 @@ namespace Kieunvph14806_ASSigment
         public void sapxepnguoichonDB()//chức năng Sắp Xếp
         {
             Console.Write(" mời bạn chọn cách hiển thị được Sắp xếp theo:\n" +
-                              " 1. Tên\n" +
-                              " 2. Năm sinh\n" +
-                              " Mời bạn chọn: ");
+                          " 1. Tên\n" +
+                          " 2. Năm sinh\n" +
+                          " Mời bạn chọn: ");
             _input = Console.ReadLine();
             Console.WriteLine("\n");
             switch (_input)
             {
                 case "1":
                     Console.Write(" Mời bạn chọn cách sắp xếp Tên theo thứ tự AlphaB: \n" +
-                                      " 1. Xuôi\n" +
-                                      " 2. Ngược\n" +
-                                      " Mời bạn chọn: ");
+                                  " 1. Xuôi\n" +
+                                  " 2. Ngược\n" +
+                                  " Mời bạn chọn: ");
                     _input = Console.ReadLine();
                     Console.WriteLine("\n");
                     switch (_input)
@@ -239,9 +246,9 @@ namespace Kieunvph14806_ASSigment
                     break;
                 case "2":
                     Console.Write(" Mời bạn chọn cách sắp xếp theo tuổi: \n" +
-                                      " 1. từ già đến trẻ \n" +
-                                      " 2. từ trẻ đến già \n" +
-                                      " Mời bạn chọn: ");
+                                  " 1. từ già đến trẻ \n" +
+                                  " 2. từ trẻ đến già \n" +
+                                  " Mời bạn chọn: ");
                     _input = Console.ReadLine();
                     Console.WriteLine("\n");
                     switch (_input)
@@ -260,7 +267,7 @@ namespace Kieunvph14806_ASSigment
 
         }
         // phương thức 1: tái sử dụng khị in ra a=màn hình
-      
+
 
         //PHương thức 2: Lấy Index của đối rượng trong danh sách
         private int getIndex(string msv) // Phương thức trả về số nguyên ---- dùng để tìm vị trí
@@ -283,58 +290,33 @@ namespace Kieunvph14806_ASSigment
             return -1;// Không tìm được mã trùng thì phải trả về số âm để không bị trùng với count_list
         }
 
-
-        public void TimkiemgandungTEN()
-        {
-            Console.WriteLine(" mời bạn nhập tên để tìm: ");
-            string _input = Console.ReadLine();
-            foreach (var x in _lstDanhBas.Where(c=> c.Ten.Contains(_input)))
-            {
-                x.InRaManHinh();
-                Console.WriteLine("----------\n" +
-                                  "\n");
-            }
-        }
-
-        public void TimKiemDanDungSDT()
-        {
-            Console.Write(" Mời Bạn Nhập số điện thoại gần đúng: ");
-            string _input = Console.ReadLine();
-            var lstTemp = _lstDanhBas.Where(c => c.Sdt1.Contains(_input)).ToList();
-            if (lstTemp.Count > 0)
-            {
-                foreach (var x in lstTemp)
-                {
-                    x.InRaManHinh();
-                    Console.WriteLine("----------" +
-                                      "\n");
-                }
-                return;
-            }
-            else
-            {
-                Console.WriteLine(" số điện thoại bạn tìm không có.");
-            }
-
-
-        }
-
         public void QuanLyDnhBa()// dùng sort
         {
             do
             {
-                Console.Write("1. Thêm Liên lạc vào Danh bạ.\n" +
-                                  "2. Sửa liên lạc trong Danh Bạ\n" +
-                                  "3. Xóa Liên lạc trong Danh bạn\n" +
-                                  "Mời bạn chọn CT: ");
-                string chon = Console.ReadLine();
-                switch (chon)
+                Console.Write(" 1. Thêm Liên lạc vào Danh bạ.\n" +
+                              " 2. Sửa liên lạc trong Danh Bạ\n" +
+                              " 3. Xóa Liên lạc trong Danh bạn\n" +
+                              " 4. hiển thị danh sách." +
+                              " 0. thoát" +
+                              " Mời bạn chọn CT: ");
+                _input = Console.ReadLine();
+                switch (_input)
                 {
-                    case "1":gsgn
+                    case "1": themLienHe(); break;
+                    case "2": SuaSV(); break;
+                    case "3": XoaLienHe(); break;
+                    case "4": XuatDB();break;
+                    case "0": Console.WriteLine("");break;
+                    default: Console.WriteLine(" chương trình không có. MỜi chọn lại");
+                        break;
+
                 }
 
-            } while (true);
+            } while (!(_input=="0"));
         }
+
+        #endregion
 
     }
 }
