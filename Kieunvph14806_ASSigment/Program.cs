@@ -7,7 +7,8 @@ namespace Kieunvph14806_ASSigment
     Cấu trúc Project bao gồm:
     Program.Class(Bao gồm hàm, menu)
     -- Nguoi.Class(Lớp cha - Bao gồm các thuộc tính: Ho, Ten, TenDem, NamSinh, GioITinh - inRaManHinh())
-    -- DanhBa.Class(Lớp con - Kế thừa các thuộc tính của lớp cha Bao gồm các thuộc tính riêng của đối tượng như:  Sdt1, Sdt2, Email, GhiChu, - Hàm ToString() và kế thừa hàm inRaManHinh() từ lớp cha)
+    -- DanhBa.Class(Lớp con - Kế thừa các thuộc tính của lớp cha Bao gồm các thuộc tính riêng của
+     đối tượng như:  Sdt1, Sdt2, Email, GhiChu, - Hàm ToString() và kế thừa hàm inRaManHinh() từ lớp cha)
     -- DanhBaService.Class(Bao gồm các chức năng của bài toán)
     Các chức năng chương trình cần có:
     Quản lý danh bạ(FAKE 10 NGƯỜI -THÊM - SỬA - XÓA - IN ĐỐI TƯỢNG - Sắp xếp tăng hoặc giảm)

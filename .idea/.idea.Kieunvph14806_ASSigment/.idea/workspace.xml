@@ -4,18 +4,36 @@
     <projectFile>Kieunvph14806_ASSigment/Kieunvph14806_ASSigment.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7a5e4cf-b1bf-491c-9577-f07fba3a9319" name="Default Changelist" comment="" />
+    <list default="true" id="b7a5e4cf-b1bf-491c-9577-f07fba3a9319" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceSearchGd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kieunvph14806_ASSigment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kieunvph14806_ASSigment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/DanhBa.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/DanhBa.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints>
+      <file url="file://$PROJECT_DIR$/Kieunvph14806_ASSigment/Service.cs" />
+    </disable_hints>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/Service2.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
+      <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/DanhBa.cs" />
       <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service2.cs" />
+      <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/Program.cs" />
+      <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service.cs" />
+      <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceSearchGd.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tidopo9gwiwtNAuYwNeEDotONA" />
@@ -28,6 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -59,14 +78,27 @@
       <option name="presentableId" value="Default" />
       <updated>1623256023403</updated>
       <workItem from="1623256040320" duration="1245000" />
+      <workItem from="1623259524006" duration="344000" />
+      <workItem from="1623259895773" duration="3667000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
