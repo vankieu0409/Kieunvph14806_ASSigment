@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7a5e4cf-b1bf-491c-9577-f07fba3a9319" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceDocGhiFile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kieunvph14806_ASSigment/.idea/shelf/Default_Changelist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kieunvph14806_ASSigment/.idea/shelf/Default_Changelist.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kieunvph14806_ASSigment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kieunvph14806_ASSigment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/DanhBa.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/DanhBa.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Nguoi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Nguoi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceSearchGd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceSearchGd.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,17 +27,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/Service2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/DanhBa.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/DanhBa.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceDocGhiFile.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/DanhBa.cs" />
       <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service2.cs" />
       <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/Program.cs" />
       <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service.cs" />
       <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceSearchGd.cs" />
+      <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service1.cs" />
+      <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/Nguoi.cs" />
+      <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/DanhBa.cs" />
+      <option value="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceDocGhiFile.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tidopo9gwiwtNAuYwNeEDotONA" />
@@ -45,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -79,6 +86,7 @@
       <workItem from="1623256040320" duration="1245000" />
       <workItem from="1623259524006" duration="344000" />
       <workItem from="1623259895773" duration="4059000" />
+      <workItem from="1623335222946" duration="4071000" />
     </task>
     <task id="LOCAL-00001" summary="kk">
       <created>1623264109669</created>
@@ -105,6 +113,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

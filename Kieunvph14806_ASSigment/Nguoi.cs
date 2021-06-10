@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Kieunvph14806_ASSigment
 {//Nguoi.Class(Lớp cha - Bao gồm các thuộc tính: Ho, Ten, TenDem, NamSinh, GioITinh - inRaManHinh())
+    [Serializable]
     class Nguoi
     {
         private string ho;

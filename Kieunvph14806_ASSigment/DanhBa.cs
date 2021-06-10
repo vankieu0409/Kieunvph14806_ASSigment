@@ -2,6 +2,7 @@
 
 namespace Kieunvph14806_ASSigment
 {
+    [Serializable]
     //{DanhBa.Class(Lớp con - Kế thừa các thuộc tính của lớp cha Bao gồm các thuộc tính riêng của đối
     //    tượng như: Sdt1, Sdt2, Email, GhiChu, - Hàm ToString() và kế thừa hàm inRaManHinh() từ lớp cha)
     class DanhBa : Nguoi

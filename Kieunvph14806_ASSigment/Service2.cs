@@ -74,6 +74,7 @@ namespace Kieunvph14806_ASSigment
 
         public void SapXepTheoten()
         {
+
             foreach (var x in _lstDanhBas.OrderBy(c => c.Ten).ToList())
             {
                 x.InRaManHinh();
