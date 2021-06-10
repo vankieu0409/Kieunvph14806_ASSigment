@@ -15,6 +15,7 @@ namespace Kieunvph14806_ASSigment
 
         public Service()
         {
+            
             _lstDanhBas = new List<DanhBa>();
             DanhBa nguoi1 = new DanhBa("Nguyễn", "Văn", "Kiều", 1998, 1, "0382802345", "0857326448",
                 " vankieu0409@gmail.com", "Hiền Huynh");
@@ -53,7 +54,7 @@ namespace Kieunvph14806_ASSigment
 
         #region QLDB
 
-        public void themLienHe() //THÊM -  Liên Hệ vào TRONG DANH BẠ
+        private void themLienHe() //THÊM -  Liên Hệ vào TRONG DANH BẠ
         {
             Console.Write(" mời nhập Số người cần thêm: ");
             _input = Console.ReadLine();
@@ -75,17 +76,17 @@ namespace Kieunvph14806_ASSigment
             }
 
             flag =1;
-
+            Console.WriteLine("\n");
         }
 
         private string Mess(string mes)
         {
-            Console.WriteLine(" mời bạn Nhập "+mes);
+            Console.Write(" mời bạn Nhập "+mes);
             return Console.ReadLine();
         }
 
 
-        public void XoaLienHe() //xóa theo index--  XÓA Liên Hệ TRONG DANH BẠ
+        private void XoaLienHe() //xóa theo index--  XÓA Liên Hệ TRONG DANH BẠ
         {
             _input = Mess(" tên Danh bạn cần xóa: ");
             int temp = getIndex(_input);
@@ -98,9 +99,10 @@ namespace Kieunvph14806_ASSigment
             _lstDanhBas.RemoveAt(temp);
             flag = 2;
             Console.WriteLine("            Xóa Thành Công");
+            Console.WriteLine("\n");
         }
 
-        public void SuaSV() //sửa theo index //T SỬA Thông tin Liên hệ TRONG DANH BẠ
+        private void SuaSV() //sửa theo index //T SỬA Thông tin Liên hệ TRONG DANH BẠ
         {
             
             _input = Mess("tên hoặc số điện thoại LIên Hệ mà bạn Muốn sửa:  ");
@@ -108,6 +110,7 @@ namespace Kieunvph14806_ASSigment
             if (temp == -1)
             {
                 Console.WriteLine(" Liên hệ không tồn tại,");
+                Console.WriteLine("\n");
                 return;
             }
 
@@ -175,11 +178,13 @@ namespace Kieunvph14806_ASSigment
 
                 flag = 3;
             } while (!(_input == "8"));// toán tử phủ định. dùng vong do- while
+            Console.WriteLine("\n");
         }
 
-        public void XuatDB()
+        private void XuatDB()
         {
             inra(_lstDanhBas);
+            Console.WriteLine("\n");
         }
         private void inra(List<DanhBa> _list)
         {
@@ -188,6 +193,7 @@ namespace Kieunvph14806_ASSigment
             foreach (var x in _list)
             {
                 x.InRaManHinh();
+                Console.WriteLine("\n");
             }
         }
 
@@ -228,6 +234,7 @@ namespace Kieunvph14806_ASSigment
                               " 0. thoát" +
                               " Mời bạn chọn CT: ");
                 _input = Console.ReadLine();
+                Console.WriteLine("\n");
                 switch (_input)
                 {
                     case "1": themLienHe(); break;
@@ -241,6 +248,7 @@ namespace Kieunvph14806_ASSigment
                 }
                 Console.WriteLine("                     *");
             } while (!(_input=="0"));
+            Console.WriteLine("\n");
         }
 
         #endregion

@@ -55,13 +55,10 @@ namespace Kieunvph14806_ASSigment
                     pt.QuanLyDnhBa(); Console.WriteLine(""); ; break;
                 case "2":
                     pt.LocDanhSach(); Console.WriteLine(""); break;
-                case "3":
-                     Console.WriteLine(""); break;
                 case "4":
-                     Console.WriteLine(""); break;
-                case "5": break;
+                     pt.TimKiemGanDung();Console.WriteLine(""); break;
                 case "0":
-                    Environment.Exit(0); break;
+                    pt.MessSaveFile(); break;
                 default: Console.WriteLine(" CT đang phát triển"); break;
             }
             Console.WriteLine("");
@@ -72,12 +69,10 @@ namespace Kieunvph14806_ASSigment
         public static void CallBack(DelegateCallBack delegateCallback)
         {
             Console.Write("----------- Danh sách ct ----------\n" +
-                                        " 1 Quản lý\n" +
-                                        " 2. LỌc \n" +
-                                        " 3. \n" +
-                                        " 4. \n" +
-                                        " 5. \n" +
-                                        " 0. THoát CT" +
+                                        " 1. Quản lý danh bạ\n" +
+                                        " 2. LỌc Danh bạ\n" +
+                                        " 3. Tìm Kiếm danh bạ\n"+
+                                        " 0. THoát CT\n" +
                                         " MỜi bạn chọ CT: ");
 
             var lenh = Console.ReadLine();

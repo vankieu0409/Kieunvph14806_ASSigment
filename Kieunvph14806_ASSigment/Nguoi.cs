@@ -64,10 +64,8 @@ namespace Kieunvph14806_ASSigment
         public virtual void InRaManHinh()
         {
 
-            Console.WriteLine((gioiTinh == 1) ? "Anh " : (gioiTinh == 0) ? "Chị" : "");
-            Console.WriteLine("{0}\n" +
-                              " Năm Sinh: {1}\n" +
-                              " Giới Tính: {2}", ho + " " + tenDem + " " + ten, namSinh, gioiTinh==1?"Nam":gioiTinh==0?"Nữ":"");
+            Console.Write((gioiTinh == 1) ? "Anh " : (gioiTinh == 0) ? "Chị " : "");
+            Console.WriteLine("{0} | Năm Sinh: {1} | Giới Tính: {2}", ho + " " + tenDem + " " + ten, namSinh, gioiTinh==1?"Nam":gioiTinh==0?"Nữ":"");
         }
     }
 }

@@ -6,6 +6,7 @@ namespace Kieunvph14806_ASSigment
 {
     partial class Service
     {
+        public List<DanhBa> _lstXuat;
         public void LocDanhSach()
         {
             do
@@ -13,6 +14,7 @@ namespace Kieunvph14806_ASSigment
                 Console.Write(" 1. lọc theo nhà mạng.\n" +
                               " 2. lọc theo tên\n" +
                               " 3. lọc theo giới tính\n" +
+                              " 4. LỌc theo chữ cái bắt đầy" +
                               " 0. thoát" +
                               " Mời bạn chọn CT: ");
                 _input = Console.ReadLine();
@@ -27,6 +29,9 @@ namespace Kieunvph14806_ASSigment
                     case "3":
                         SAPxeptheoGioiTinh();
                         break;
+                    case "4":
+                        ChuCaiBatDau();
+                        break;
 
                     case "0":
                         Console.WriteLine("");
@@ -40,31 +45,25 @@ namespace Kieunvph14806_ASSigment
             } while (!(_input == "0"));
         }
 
-        public void theoNHaMang()
+        private void theoNHaMang()
         {
-            Console.WriteLine(" Những người dùng Việttel");
-            foreach (var x in _lstDanhBas.Where(c => c.Sdt1.StartsWith("098")).ToList())
+            Console.WriteLine(" Những người dùng nhà mạng Việttel");
+            var temp1 = _lstDanhBas.Where(c =>
+                c.Sdt1.StartsWith("098") && c.Ssdt2.StartsWith("098") && c.Sdt1.StartsWith("03") &&
+                c.Ssdt2.StartsWith("03")).ToList();
+            if (temp1.Count==0)  Console.WriteLine("Ko có người dùng");
+            foreach (var x in temp1)
             {
                 x.InRaManHinh();
                 Console.WriteLine("----------");
             }
-
-            foreach (var x in _lstDanhBas.Where(c => c.Ssdt2.StartsWith("098")).ToList())
-            {
-                x.InRaManHinh();
-                Console.WriteLine("----------");
-            }
-
+            
             Console.WriteLine(" \n" +
                               "\n" +
-                              " Người dùng VInaphone");
-            foreach (var x in _lstDanhBas.Where(c => c.Sdt1.StartsWith("085")).ToList())
-            {
-                x.InRaManHinh();
-                Console.WriteLine("----------");
-            }
-
-            foreach (var x in _lstDanhBas.Where(c => c.Ssdt2.StartsWith("085")).ToList())
+                              " Người dùng nhà  VInaphone");
+            var temp2 = _lstDanhBas.Where(c => c.Sdt1.StartsWith("08") && c.Ssdt2.StartsWith("08")).ToList();
+            if (temp2.Count==0) Console.WriteLine("Ko có người dùng ");
+            foreach (var x in temp2)
             {
                 x.InRaManHinh();
                 Console.WriteLine("----------");
@@ -72,17 +71,31 @@ namespace Kieunvph14806_ASSigment
 
         }
 
-        public void SapXepTheoten()
+        private void ChuCaiBatDau()
         {
-
+            string k = Mess(" chữ cái đầu: ");
+            var temp2 = _lstDanhBas.Where(c => c.Ten.StartsWith(k)).ToList();
+            if (temp2.Count == 0) Console.WriteLine("Ko có người nào có tên bắt đầu bằng chữ "+ k);
+            Console.WriteLine("danh sách người có tên bắt đầu bằng "+k);
+            foreach (var x in temp2)
+            {
+                x.InRaManHinh();
+                Console.WriteLine("----------");
+            }
+        }
+        private void SapXepTheoten()
+        {
+            flag = 4;
+            _lstDanhBas=_lstDanhBas.OrderBy(c => c.Ten).ToList();
+            Console.WriteLine(" DS SẮP xếp theo tên theo A => Z");
             foreach (var x in _lstDanhBas.OrderBy(c => c.Ten).ToList())
             {
                 x.InRaManHinh();
-                Console.WriteLine("----------");
+                
             }
         }
 
-        public void SAPxeptheoGioiTinh()
+        private void SAPxeptheoGioiTinh()
         {
             Console.WriteLine(" Danh Bạ  liên lạc là Nam");
             foreach (var x in _lstDanhBas.Where(c => c.GioiTinh == 1).ToList())

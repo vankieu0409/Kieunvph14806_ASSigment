@@ -20,11 +20,12 @@ namespace Kieunvph14806_ASSigment
                               " 2. ĐỌc File\n" +
                               " 0. THoát ra main monitor\n");
                 _input = Mess(" để chọ chương trình: ");
+                Console.WriteLine("\n");
                 switch (_input)
                 {
                     case "1":
-
-                        Console.WriteLine(Ghifile(GetLIst(), path)); break;
+                        Console.WriteLine(Ghifile(GetLIst(), path));
+                        flag = 0;break;
                     case "2":
                         foreach (var VARIABLE in DocFile(path))
                         {
@@ -34,16 +35,17 @@ namespace Kieunvph14806_ASSigment
 
                     default: Console.WriteLine(" bạn chọ sai mời chọn lại");break;
                 }
-
+                Console.WriteLine("\n");
                 Console.WriteLine("                     *");
             } while (!(_input == "0"));
+            Console.WriteLine("\n");
         }
 
         private List<DanhBa> GetLIst()
         {
             return _lstDanhBas;
         }
-        public string Ghifile(List<DanhBa> listDanhbas, string path)
+        private string Ghifile(List<DanhBa> listDanhbas, string path)
         {
             try
             {
@@ -62,7 +64,7 @@ namespace Kieunvph14806_ASSigment
             return " ghi file thất  bại rồi!";
         }
 
-        public List<DanhBa> DocFile(string path)
+        private List<DanhBa> DocFile(string path)
         {
             try
             {
@@ -81,6 +83,65 @@ namespace Kieunvph14806_ASSigment
             }
 
             return null;
+        }
+
+        public void MessSaveFile()
+        {
+            if (flag == 1)
+            {
+                Console.Write(" bạn vừa THÊM Liên hệ mà chưa Lưu!\n" +
+                                  " Bạ có muốn Lưu không?\n" +
+                                  " 1- quay lại để lưu; 0- Exit Not Save: ");
+                
+                string c = Console.ReadLine();
+                if (c=="1") return;
+                if (c=="0")
+                {
+                    Environment.Exit(0);
+                }
+            }
+            if (flag == 2)
+            {
+                Console.Write(" bạn vừa XÓA Liên hệ mà chưa Lưu!\n" +
+                                  " Bạ có muốn Lưu không?\n" +
+                                  " 1- quay lại để lưu; 0- Exit Not Save: ");
+                string c = Console.ReadLine();
+                if (c == "1") return;
+                if (c == "0")
+                {
+                    Environment.Exit(0);
+                }
+            }
+            if (flag == 3)
+            {
+                Console.Write(" bạn vừa SỬA Liên hệ mà chưa Lưu!\n" +
+                                  " Bạ có muốn Lưu không?\n" +
+                                  " 1- quay lại để lưu; 0- Exit Not Save: ");
+                string c = Console.ReadLine();
+                if (c == "1") return;
+                if (c == "0")
+                {
+                    Environment.Exit(0);
+                }
+            }
+
+            if (flag == 4)
+            {
+                Console.Write(" bạn vừa Sắp Xếp Liên hệ theo A-->Z mà chưa Lưu!\n" +
+                                  " Bạ có muốn Lưu không?\n" +
+                                  " 1- quay lại để lưu; 0- Exit Not Save: ");
+                string c = Console.ReadLine();
+                if (c == "1") return;
+                if (c == "0")
+                {
+                    Environment.Exit(0);
+                }
+            }
+
+            if (flag==0)
+            {
+                Environment.Exit(0);
+            }
         }
 
     }

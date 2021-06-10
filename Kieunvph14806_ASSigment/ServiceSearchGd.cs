@@ -28,9 +28,11 @@ namespace Kieunvph14806_ASSigment
                 }
                 Console.WriteLine("                     *");
             } while (!(lenh=="0"));
+            Console.WriteLine("\n");
+
         }
 
-        public void Ten()
+        private void Ten()
         {
             _input = Mess(" các ký tự để tìm tên: ");
             foreach (var x in _lstDanhBas.Where(c=>c.Ten.Contains(_input)))
@@ -41,7 +43,7 @@ namespace Kieunvph14806_ASSigment
             
         }
 
-        public void Sodt()
+        private void Sodt()
         {
             _input = Mess(" chuỗi số để tìm Liên lạc bạn cần: ");
             foreach (var x in _lstDanhBas.Where(c => c.Sdt1.Contains(_input) && c.Ssdt2.Contains(_input)).ToList())

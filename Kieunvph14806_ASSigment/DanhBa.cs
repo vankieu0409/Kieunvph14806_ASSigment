@@ -59,13 +59,10 @@ namespace Kieunvph14806_ASSigment
 
         public override void InRaManHinh()
         {
-            Console.Write((GioiTinh == 1) ? "Anh " : (GioiTinh == 0) ? "Chị" : "");
-            Console.WriteLine("  {0}\n" +
-                              " Năm Sinh: {1}\n" +
-                              " Giới Tính: {2}\n" +
-                              " Số điện thoại: {3} - {4}\n" +
-                              " Email: {5}\n" +
-                              " Ghi Chú: {6}", Ho + " " + TenDem + " " + Ten, NamSinh, GioiTinh == 1 ? "Nam" : GioiTinh == 0 ? "Nữ" : "", Sdt1, Ssdt2, Email, GhiChu);
+            Console.Write((GioiTinh == 1) ? "Anh " : (GioiTinh == 0) ? "Chị " : "");
+            Console.WriteLine("{0} || Năm Sinh: {1} || Giới Tính: {2} || Số điện thoại: {3} - {4} || Email: {5} || Ghi Chú: {6}",
+                Ho + " " + TenDem + " " + Ten, NamSinh, GioiTinh == 1 ? "Nam" : GioiTinh == 0 ? "Nữ" : "", Sdt1, Ssdt2, Email, GhiChu);
+            Console.WriteLine("\n");
 
         }
     }

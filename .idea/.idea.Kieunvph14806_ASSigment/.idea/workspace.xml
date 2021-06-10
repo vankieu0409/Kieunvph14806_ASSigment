@@ -4,14 +4,7 @@
     <projectFile>Kieunvph14806_ASSigment/Kieunvph14806_ASSigment.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7a5e4cf-b1bf-491c-9577-f07fba3a9319" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceLocDS.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/kieu.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceDocGhiFile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceDocGhiFile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceSearchGd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceSearchGd.cs" afterDir="false" />
-    </list>
+    <list default="true" id="b7a5e4cf-b1bf-491c-9577-f07fba3a9319" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +19,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/ServiceDocGhiFile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/Service.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/Service.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/ServiceDocGhiFile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/ServiceSearchGd.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/ServiceSearchGd.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/ServiceSearchGd.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/ServiceSearchGd.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceDocGhiFile.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -85,7 +86,7 @@
       <workItem from="1623256040320" duration="1245000" />
       <workItem from="1623259524006" duration="344000" />
       <workItem from="1623259895773" duration="4059000" />
-      <workItem from="1623335222946" duration="4713000" />
+      <workItem from="1623335222946" duration="5490000" />
     </task>
     <task id="LOCAL-00001" summary="kk">
       <created>1623264109669</created>
