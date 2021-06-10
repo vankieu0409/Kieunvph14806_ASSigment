@@ -11,6 +11,7 @@ namespace Kieunvph14806_ASSigment
         private List<DanhBa> _lstDanhBas;
         private DanhBa nguoi = new DanhBa();// Danh Bạ(): là contructor có tham số
         private string _input;
+        public int flag; // biến cờ
 
         public Service()
         {
@@ -73,6 +74,8 @@ namespace Kieunvph14806_ASSigment
 
             }
 
+            flag =1;
+
         }
 
         private string Mess(string mes)
@@ -93,6 +96,7 @@ namespace Kieunvph14806_ASSigment
             }
 
             _lstDanhBas.RemoveAt(temp);
+            flag = 2;
             Console.WriteLine("            Xóa Thành Công");
         }
 
@@ -169,6 +173,7 @@ namespace Kieunvph14806_ASSigment
 
                 }
 
+                flag = 3;
             } while (!(_input == "8"));// toán tử phủ định. dùng vong do- while
         }
 
@@ -234,7 +239,7 @@ namespace Kieunvph14806_ASSigment
                         break;
 
                 }
-
+                Console.WriteLine("                     *");
             } while (!(_input=="0"));
         }
 

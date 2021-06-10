@@ -26,6 +26,7 @@ namespace Kieunvph14806_ASSigment
                     default: Console.WriteLine(" chương trinh đang pất triển");
                         break;
                 }
+                Console.WriteLine("                     *");
             } while (!(lenh=="0"));
         }
 
