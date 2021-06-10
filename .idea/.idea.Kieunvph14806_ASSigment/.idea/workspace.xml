@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7a5e4cf-b1bf-491c-9577-f07fba3a9319" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/ServiceSearchGd.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kieunvph14806_ASSigment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kieunvph14806_ASSigment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/DanhBa.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/DanhBa.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Kieunvph14806_ASSigment/Service.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +22,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/Service2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/DanhBa.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/C# (Sharp)/C#2/Kieunvph14806_ASSigment/Kieunvph14806_ASSigment/DanhBa.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -43,6 +41,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -79,8 +78,16 @@
       <updated>1623256023403</updated>
       <workItem from="1623256040320" duration="1245000" />
       <workItem from="1623259524006" duration="344000" />
-      <workItem from="1623259895773" duration="3667000" />
+      <workItem from="1623259895773" duration="4059000" />
     </task>
+    <task id="LOCAL-00001" summary="kk">
+      <created>1623264109669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623264109669</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,5 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="kk" />
+    <option name="LAST_COMMIT_MESSAGE" value="kk" />
   </component>
 </project>
