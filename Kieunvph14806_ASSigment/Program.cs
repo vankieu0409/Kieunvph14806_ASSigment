@@ -23,7 +23,7 @@ namespace Kieunvph14806_ASSigment
     Sử dụng Delegate + 1 Điểm
     Check lỗi nhập vào người dùng hoặc Generic + 1 điểm
     */
-    
+
 
     class Program
     {
@@ -56,7 +56,7 @@ namespace Kieunvph14806_ASSigment
                 case "2":
                     pt.LocDanhSach(); Console.WriteLine(""); break;
                 case "3":
-                     pt.TimKiemGanDung();Console.WriteLine(""); break;
+                    pt.TimKiemGanDung(); Console.WriteLine(""); break;
                 case "4":
                     pt.QLDocGhi();
                     Console.WriteLine(); break;
@@ -75,12 +75,25 @@ namespace Kieunvph14806_ASSigment
                                         " 1. Quản lý danh bạ\n" +
                                         " 2. LỌc Danh bạ\n" +
                                         " 3. Tìm Kiếm danh bạ\n" +
-                                        " 4. Đọc ghi file\n"+
+                                        " 4. Đọc ghi file\n" +
                                         " 0. THoát CT\n" +
                                         " MỜi bạn chọ CT: ");
+            try
+            {
+                var lenh = Console.ReadLine();
+                if (string.IsNullOrEmpty(lenh))
+                {
+                    Exception Ex = new Exception(" không được để trống");
+                    throw Ex;
+                }
 
-            var lenh = Console.ReadLine();
-            delegateCallback(lenh);// gọi qua delegate
+                delegateCallback(lenh);// gọi qua delegate
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+               
+            }
 
         }
     }
