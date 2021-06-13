@@ -27,7 +27,7 @@ namespace Kieunvph14806_ASSigment
 
     class Program
     {
-        public static Service pt = new Service();
+        public static IService pt = new Service();
         static void Main(string[] args)
         {
             Console.InputEncoding = Encoding.Unicode;
@@ -55,8 +55,11 @@ namespace Kieunvph14806_ASSigment
                     pt.QuanLyDnhBa(); Console.WriteLine(""); ; break;
                 case "2":
                     pt.LocDanhSach(); Console.WriteLine(""); break;
-                case "4":
+                case "3":
                      pt.TimKiemGanDung();Console.WriteLine(""); break;
+                case "4":
+                    pt.QLDocGhi();
+                    Console.WriteLine(); break;
                 case "0":
                     pt.MessSaveFile(); break;
                 default: Console.WriteLine(" CT đang phát triển"); break;
@@ -71,7 +74,8 @@ namespace Kieunvph14806_ASSigment
             Console.Write("----------- Danh sách ct ----------\n" +
                                         " 1. Quản lý danh bạ\n" +
                                         " 2. LỌc Danh bạ\n" +
-                                        " 3. Tìm Kiếm danh bạ\n"+
+                                        " 3. Tìm Kiếm danh bạ\n" +
+                                        " 4. Đọc ghi file\n"+
                                         " 0. THoát CT\n" +
                                         " MỜi bạn chọ CT: ");
 

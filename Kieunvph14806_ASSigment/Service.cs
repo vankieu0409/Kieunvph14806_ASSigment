@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Kieunvph14806_ASSigment
 {
-    partial class Service
+    partial class Service : IService
     {
 
         private List<DanhBa> _lstDanhBas;

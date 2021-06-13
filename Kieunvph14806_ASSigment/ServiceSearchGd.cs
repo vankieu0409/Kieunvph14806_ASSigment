@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 namespace Kieunvph14806_ASSigment
 {
     //Tìm kiếm(Tìm kiếm theo tên và số điện thoại gần đúng sử dụng LINQ)
-    partial class Service
+    partial class Service 
     {
         private string lenh;
         public void TimKiemGanDung()

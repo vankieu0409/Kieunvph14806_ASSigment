@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Kieunvph14806_ASSigment
 {
-    partial class Service
+    partial class Service 
     {
         private FileStream _fs;
         private BinaryFormatter _bf;
