@@ -6,7 +6,7 @@ namespace Kieunvph14806_ASSigment
 {
     partial class Service
     {
-        public List<DanhBa> _lstXuat;
+      //  public List<DanhBa> _lstXuat;
         public void LocDanhSach()
         {
             do
